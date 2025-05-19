@@ -2,6 +2,8 @@
 
 Requiere Godot 4.4
 
+finalizado en 2024
+
 Este es un simple juego casual, hecho en un día, solo es identificar la cara que se muestra asociandola a la emoción correspondiente, por puntos, con dos modalidades de juego. Las caras No son de mi autoría, fueron hurtadas de Internet.
 
 puede probarlo en: https://omwekiatl.itch.io/expresiones
