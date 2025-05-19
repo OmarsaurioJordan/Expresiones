@@ -1,0 +1,66 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://moeovddlyqki"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rsdm0"]
+bg_color = Color(0.894118, 0.894118, 0.894118, 0.529412)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.205117, 0.205117, 0.205117, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jt633"]
+bg_color = Color(0.758192, 0.758192, 0.758192, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.205117, 0.205117, 0.205117, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dv83b"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.205117, 0.205117, 0.205117, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aay2d"]
+bg_color = Color(0.435192, 0.435192, 0.435192, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.205117, 0.205117, 0.205117, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[resource]
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_disabled_color = Color(0, 0, 0, 0.568627)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/font_sizes/font_size = 24
+Button/styles/disabled = SubResource("StyleBoxFlat_rsdm0")
+Button/styles/hover = SubResource("StyleBoxFlat_jt633")
+Button/styles/normal = SubResource("StyleBoxFlat_dv83b")
+Button/styles/pressed = SubResource("StyleBoxFlat_aay2d")
+Label/font_sizes/font_size = 32

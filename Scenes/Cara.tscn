@@ -1,0 +1,150 @@
+[gd_scene load_steps=26 format=3 uid="uid://c52mrpgntfgqd"]
+
+[ext_resource type="Script" uid="uid://ck17fq35m3pc" path="res://Scripts/Cara.gd" id="1_mtmy8"]
+[ext_resource type="Texture2D" uid="uid://ckpopvx3auswn" path="res://Sprites/c0.png" id="2_l8rw5"]
+[ext_resource type="Texture2D" uid="uid://b6g66l7qrslnk" path="res://Sprites/c1.png" id="3_ucmab"]
+[ext_resource type="Texture2D" uid="uid://cn82a4gvf5ik6" path="res://Sprites/c2.png" id="4_u0ksl"]
+[ext_resource type="Texture2D" uid="uid://b2mir83q0l7y7" path="res://Sprites/c3.png" id="5_pwxtm"]
+[ext_resource type="Texture2D" uid="uid://cionb1vhyaye4" path="res://Sprites/c4.png" id="6_xpnrx"]
+[ext_resource type="Texture2D" uid="uid://cfnunpp1l7dcl" path="res://Sprites/c5.png" id="7_t346a"]
+[ext_resource type="Texture2D" uid="uid://mp5ho3tu5od1" path="res://Sprites/c6.png" id="8_mfi2n"]
+[ext_resource type="Texture2D" uid="uid://pjnhoar11b57" path="res://Sprites/c7.png" id="9_dn8sl"]
+[ext_resource type="Texture2D" uid="uid://ixs6oso3ufnm" path="res://Sprites/c8.png" id="10_ejikk"]
+[ext_resource type="Texture2D" uid="uid://du14lwsa25rym" path="res://Sprites/c9.png" id="11_strho"]
+[ext_resource type="Texture2D" uid="uid://2wcjb0qrmv65" path="res://Sprites/c10.png" id="12_gp6sa"]
+[ext_resource type="Texture2D" uid="uid://gre2nocsfxtn" path="res://Sprites/c11.png" id="13_52se0"]
+[ext_resource type="Texture2D" uid="uid://b6di5icp80amc" path="res://Sprites/c12.png" id="14_tg0ha"]
+[ext_resource type="Texture2D" uid="uid://bliswii4hhyt3" path="res://Sprites/c13.png" id="15_txqse"]
+[ext_resource type="Texture2D" uid="uid://dgiokb04qg6te" path="res://Sprites/c14.png" id="16_ejr3p"]
+[ext_resource type="Texture2D" uid="uid://d16vxyn607bb3" path="res://Sprites/c15.png" id="17_av1sm"]
+[ext_resource type="Texture2D" uid="uid://ccbs000ux715g" path="res://Sprites/c16.png" id="18_h0vmd"]
+[ext_resource type="Texture2D" uid="uid://c7oc6staxtea4" path="res://Sprites/c17.png" id="19_u06xx"]
+[ext_resource type="Texture2D" uid="uid://cd38sq8ftjr7b" path="res://Sprites/c18.png" id="20_p6mvw"]
+[ext_resource type="Texture2D" uid="uid://cctdu03h7rfvx" path="res://Sprites/c19.png" id="21_vpemn"]
+[ext_resource type="Texture2D" uid="uid://v5ycmaukadcj" path="res://Sprites/c20.png" id="22_ochce"]
+[ext_resource type="Texture2D" uid="uid://ceh72dccq4b5r" path="res://Sprites/c21.png" id="23_6vb8u"]
+[ext_resource type="Texture2D" uid="uid://dtv3tm3r7jwhk" path="res://Sprites/c22.png" id="24_7d577"]
+[ext_resource type="Texture2D" uid="uid://dqqr1wxknj3t4" path="res://Sprites/c23.png" id="25_o16uq"]
+
+[node name="Cara" type="Node2D"]
+script = ExtResource("1_mtmy8")
+metadata/_edit_lock_ = true
+
+[node name="C0" type="Sprite2D" parent="."]
+texture = ExtResource("2_l8rw5")
+metadata/_edit_lock_ = true
+
+[node name="C1" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("3_ucmab")
+metadata/_edit_lock_ = true
+
+[node name="C2" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("4_u0ksl")
+metadata/_edit_lock_ = true
+
+[node name="C3" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("5_pwxtm")
+metadata/_edit_lock_ = true
+
+[node name="C4" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("6_xpnrx")
+metadata/_edit_lock_ = true
+
+[node name="C5" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("7_t346a")
+metadata/_edit_lock_ = true
+
+[node name="C6" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("8_mfi2n")
+metadata/_edit_lock_ = true
+
+[node name="C7" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("9_dn8sl")
+metadata/_edit_lock_ = true
+
+[node name="C8" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("10_ejikk")
+metadata/_edit_lock_ = true
+
+[node name="C9" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("11_strho")
+metadata/_edit_lock_ = true
+
+[node name="C10" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("12_gp6sa")
+metadata/_edit_lock_ = true
+
+[node name="C11" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("13_52se0")
+metadata/_edit_lock_ = true
+
+[node name="C12" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("14_tg0ha")
+metadata/_edit_lock_ = true
+
+[node name="C13" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("15_txqse")
+metadata/_edit_lock_ = true
+
+[node name="C14" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("16_ejr3p")
+metadata/_edit_lock_ = true
+
+[node name="C15" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("17_av1sm")
+metadata/_edit_lock_ = true
+
+[node name="C16" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("18_h0vmd")
+metadata/_edit_lock_ = true
+
+[node name="C17" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("19_u06xx")
+metadata/_edit_lock_ = true
+
+[node name="C18" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("20_p6mvw")
+metadata/_edit_lock_ = true
+
+[node name="C19" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("21_vpemn")
+metadata/_edit_lock_ = true
+
+[node name="C20" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("22_ochce")
+metadata/_edit_lock_ = true
+
+[node name="C21" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("23_6vb8u")
+metadata/_edit_lock_ = true
+
+[node name="C22" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("24_7d577")
+metadata/_edit_lock_ = true
+
+[node name="C23" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("25_o16uq")
+metadata/_edit_lock_ = true

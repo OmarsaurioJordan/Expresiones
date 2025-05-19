@@ -1,0 +1,84 @@
+[gd_scene load_steps=5 format=3 uid="uid://djqompdjnmwx8"]
+
+[ext_resource type="Script" uid="uid://dl4m8hk42lmss" path="res://Scripts/Menu.gd" id="1_762he"]
+[ext_resource type="Theme" uid="uid://moeovddlyqki" path="res://Sprites/Tema.tres" id="1_ewc5u"]
+[ext_resource type="PackedScene" uid="uid://c52mrpgntfgqd" path="res://Scenes/Cara.tscn" id="3_2egrt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nwd1x"]
+bg_color = Color(0.10748, 0.10748, 0.10748, 1)
+
+[node name="Menu" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_nwd1x")
+script = ExtResource("1_762he")
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 19.0
+offset_right = 313.0
+offset_bottom = 112.0
+theme = ExtResource("1_ewc5u")
+text = "Expresiónes
+Faciales"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="CaraAni" parent="." instance=ExtResource("3_2egrt")]
+position = Vector2(202, 321)
+scale = Vector2(2, 2)
+
+[node name="RecordOrd" type="Label" parent="."]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 520.0
+offset_right = 371.0
+offset_bottom = 565.0
+theme = ExtResource("1_ewc5u")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="RecordRnd" type="Label" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 522.0
+offset_right = 183.0
+offset_bottom = 567.0
+theme = ExtResource("1_ewc5u")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="BtnRnd" type="Button" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 583.0
+offset_right = 191.0
+offset_bottom = 642.0
+focus_mode = 0
+theme = ExtResource("1_ewc5u")
+text = "Aleatorio"
+metadata/_edit_lock_ = true
+
+[node name="BtnOrd" type="Button" parent="."]
+layout_mode = 0
+offset_left = 221.0
+offset_top = 581.0
+offset_right = 380.0
+offset_bottom = 640.0
+focus_mode = 0
+theme = ExtResource("1_ewc5u")
+text = "Ordenado"
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="BtnRnd" to="." method="_on_btn_rnd_pressed"]
+[connection signal="pressed" from="BtnOrd" to="." method="_on_btn_ord_pressed"]

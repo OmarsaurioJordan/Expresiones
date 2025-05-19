@@ -1,0 +1,172 @@
+[gd_scene load_steps=10 format=3 uid="uid://ojmxvdhglfu8"]
+
+[ext_resource type="Script" uid="uid://dsjwm1stcwtqv" path="res://Scripts/Juego.gd" id="1_5esus"]
+[ext_resource type="Theme" uid="uid://moeovddlyqki" path="res://Sprites/Tema.tres" id="2_s4mtj"]
+[ext_resource type="Texture2D" uid="uid://bkjjofkkg5cmq" path="res://Sprites/glow.png" id="3_w3rb2"]
+[ext_resource type="AudioStream" uid="uid://dno285wfvkyy1" path="res://Sounds/acierto.wav" id="4_opatj"]
+[ext_resource type="PackedScene" uid="uid://c52mrpgntfgqd" path="res://Scenes/Cara.tscn" id="4_ui5jv"]
+[ext_resource type="AudioStream" uid="uid://n88efvdtyfs8" path="res://Sounds/fallo.wav" id="5_3jaq1"]
+[ext_resource type="AudioStream" uid="uid://cswdqlm03s2dp" path="res://Sounds/musica.wav" id="6_pldk6"]
+[ext_resource type="AudioStream" uid="uid://dk80dvshmvhju" path="res://Sounds/reloj.wav" id="7_w862o"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fb6a8"]
+bg_color = Color(0.105882, 0.105882, 0.105882, 1)
+
+[node name="Juego" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_fb6a8")
+script = ExtResource("1_5esus")
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 19.0
+offset_right = 313.0
+offset_bottom = 64.0
+theme = ExtResource("2_s4mtj")
+text = "Aleatorio"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="Display" type="Label" parent="."]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 74.0
+offset_right = 386.0
+offset_bottom = 120.0
+theme = ExtResource("2_s4mtj")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="BtnMenu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 10.0
+offset_right = 92.0
+offset_bottom = 69.0
+focus_mode = 0
+theme = ExtResource("2_s4mtj")
+text = "Out"
+metadata/_edit_lock_ = true
+
+[node name="Glow" type="Sprite2D" parent="."]
+position = Vector2(206, 309)
+scale = Vector2(2, 2)
+texture = ExtResource("3_w3rb2")
+metadata/_edit_lock_ = true
+
+[node name="CaraFondo" parent="." instance=ExtResource("4_ui5jv")]
+position = Vector2(208, 310)
+scale = Vector2(2, 2)
+
+[node name="CaraFrente" parent="." instance=ExtResource("4_ui5jv")]
+position = Vector2(208, 310)
+scale = Vector2(2, 2)
+
+[node name="Botones" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="Btn0" type="Button" parent="Botones"]
+self_modulate = Color(1, 0.758835, 0.725837, 1)
+layout_mode = 0
+offset_left = 34.0
+offset_top = 508.0
+offset_right = 193.0
+offset_bottom = 567.0
+focus_mode = 0
+theme = ExtResource("2_s4mtj")
+text = "Ira"
+metadata/_edit_lock_ = true
+
+[node name="Btn1" type="Button" parent="Botones"]
+self_modulate = Color(0.769074, 0.999509, 0.796147, 1)
+layout_mode = 0
+offset_left = 222.0
+offset_top = 509.0
+offset_right = 381.0
+offset_bottom = 568.0
+focus_mode = 0
+theme = ExtResource("2_s4mtj")
+text = "Disgusto"
+metadata/_edit_lock_ = true
+
+[node name="Btn2" type="Button" parent="Botones"]
+self_modulate = Color(0.863046, 0.776927, 0.948673, 1)
+layout_mode = 0
+offset_left = 33.0
+offset_top = 576.0
+offset_right = 192.0
+offset_bottom = 635.0
+focus_mode = 0
+theme = ExtResource("2_s4mtj")
+text = "Temor"
+metadata/_edit_lock_ = true
+
+[node name="Btn3" type="Button" parent="Botones"]
+self_modulate = Color(0.881486, 0.882192, 0.664734, 1)
+layout_mode = 0
+offset_left = 221.0
+offset_top = 577.0
+offset_right = 380.0
+offset_bottom = 636.0
+focus_mode = 0
+theme = ExtResource("2_s4mtj")
+text = "Alegría"
+metadata/_edit_lock_ = true
+
+[node name="Btn4" type="Button" parent="Botones"]
+self_modulate = Color(0.650091, 0.921479, 0.942415, 1)
+layout_mode = 0
+offset_left = 35.0
+offset_top = 644.0
+offset_right = 194.0
+offset_bottom = 703.0
+focus_mode = 0
+theme = ExtResource("2_s4mtj")
+text = "Tristeza"
+metadata/_edit_lock_ = true
+
+[node name="Btn5" type="Button" parent="Botones"]
+self_modulate = Color(0.791999, 0.791999, 0.791999, 1)
+layout_mode = 0
+offset_left = 223.0
+offset_top = 645.0
+offset_right = 382.0
+offset_bottom = 704.0
+focus_mode = 0
+theme = ExtResource("2_s4mtj")
+text = "Sorpresa"
+metadata/_edit_lock_ = true
+
+[node name="AudAcierto" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_opatj")
+
+[node name="AudFallo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_3jaq1")
+
+[node name="AudMusica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_pldk6")
+autoplay = true
+
+[node name="AudReloj" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_w862o")
+autoplay = true
+
+[connection signal="pressed" from="BtnMenu" to="." method="_on_btn_menu_pressed"]
+[connection signal="pressed" from="Botones/Btn0" to="." method="_on_btn_0_pressed"]
+[connection signal="pressed" from="Botones/Btn1" to="." method="_on_btn_1_pressed"]
+[connection signal="pressed" from="Botones/Btn2" to="." method="_on_btn_2_pressed"]
+[connection signal="pressed" from="Botones/Btn3" to="." method="_on_btn_3_pressed"]
+[connection signal="pressed" from="Botones/Btn4" to="." method="_on_btn_4_pressed"]
+[connection signal="pressed" from="Botones/Btn5" to="." method="_on_btn_5_pressed"]
